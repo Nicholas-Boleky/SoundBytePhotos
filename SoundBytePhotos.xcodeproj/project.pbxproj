@@ -396,6 +396,9 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "\"We need permissions to the microphone so we can record voice notes for the pictures\"";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "\"We need access to the photo library to add photos to the app\"";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "\"We need permission for speech recognition to transcribe the voice notes\"";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -435,6 +438,9 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "\"We need permissions to the microphone so we can record voice notes for the pictures\"";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "\"We need access to the photo library to add photos to the app\"";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "\"We need permission for speech recognition to transcribe the voice notes\"";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
