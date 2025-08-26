@@ -15,24 +15,19 @@ struct OnboardingView: View {
     var onboardingMessage: String = "In order to work as intended, SoundByte Pictures needs to read your photo library, record your voice, and transcribe voice notes. When you click the button below, you will be asked to grant those permissions. If you change your mind later you can adjust these permissions in Settings"
     
     var body: some View {
-            
-         
-                VStack {
-                    Spacer()
-                    Text(onboardingMessage)
-                        .font(.title2)
-                        .padding()
-                    Spacer()
-                    Button("Continue") {
-                        showPermissionsSheet = true
-                    }
-                }
-                .sheet(isPresented: $showPermissionsSheet) {
-                    PermissionsList(permissionManager: permissionManager, hasSeenOnboarding: $hasSeenOnboarding, showPermissionsSheet: $showPermissionsSheet)
-                }
-           
-            
-        
+        VStack {
+            Spacer()
+            Text(onboardingMessage)
+                .font(.title2)
+                .padding()
+            Spacer()
+            Button("Continue") {
+                showPermissionsSheet = true
+            }
+        }
+        .sheet(isPresented: $showPermissionsSheet) {
+            PermissionsList(permissionManager: permissionManager, hasSeenOnboarding: $hasSeenOnboarding, showPermissionsSheet: $showPermissionsSheet)
+        }
     }
 }
 
